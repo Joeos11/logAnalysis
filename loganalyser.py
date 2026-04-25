@@ -8,6 +8,8 @@ failed_logins = defaultdict(int)
 login_times = []
 
 # Regex patterns
+
+
 failed_pattern = re.compile(r"Failed password.*from (\d+\.\d+\.\d+\.\d+)")
 success_pattern = re.compile(r"Accepted password.*from (\d+\.\d+\.\d+\.\d+)")
 time_pattern = re.compile(r"(\w+\s+\d+\s+\d+:\d+:\d+)")
