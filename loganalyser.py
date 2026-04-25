@@ -2,7 +2,7 @@ import re
 from collections import defaultdict
 from datetime import datetime
 
-log_file = "auth.log"
+log_file = "sample_logs/auth.log"
 
 failed_logins = defaultdict(int)
 login_times = []
