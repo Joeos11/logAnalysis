@@ -1,1 +1,12 @@
+Apr 25 10:15:32 server sshd[1234]: Failed password for invalid user admin from 192.168.1.10 port 22
+Apr 25 10:15:35 server sshd[1234]: Failed password for invalid user admin from 192.168.1.10 port 22
+Apr 25 10:15:40 server sshd[1234]: Failed password for invalid user admin from 192.168.1.10 port 22
 
+Apr 25 14:22:10 server sshd[2222]: Accepted password for user1 from 10.0.0.5 port 22
+
+Apr 25 03:02:12 server sshd[3333]: Accepted password for user2 from 172.16.0.3 port 22
+
+Apr 25 11:45:01 server sshd[4444]: Failed password for invalid user test from 203.0.113.5 port 22
+Apr 25 11:45:05 server sshd[4444]: Failed password for invalid user test from 203.0.113.5 port 22
+
+Apr 25 02:15:45 server sshd[5555]: Accepted password for admin from 198.51.100.23 port 22
