@@ -33,14 +33,19 @@ with open(log_file, "r") as file:
             failed_logins[ip] += 1
 
 # Detect suspicious activity
-print("\n--- Suspicious Activity Report ---\n")
+report_path = "output/report.txt"
 
-# Repeated failed logins
-for ip, count in failed_logins.items():
-    if count >= 3:
-        print(f"[ALERT] Multiple failed logins from {ip}: {count} attempts")
+with open(report_path, "w") as report:
+    report.write("--- Suspicious Activity Report ---\n\n")
 
-# Unusual login times (e.g. 00:00–05:00)
-for t in login_times:
-    if t.hour < 5:
-        print(f"[WARNING] Login at unusual time: {t}")
+    # Repeated failed logins
+    for ip, count in failed_logins.items():
+        if count >= 3:
+            report.write(f"[ALERT] Multiple failed logins from {ip}: {count} attempts\n")
+
+    # Unusual login times (00:00–05:00)
+    for t in login_times:
+        if t.hour < 5:
+            report.write(f"[WARNING] Login at unusual time: {t}\n")
+
+print(f"Report generated at {report_path}") 

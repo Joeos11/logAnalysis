@@ -1,1 +1,5 @@
+--- Suspicious Activity Report ---
 
+[ALERT] Multiple failed logins from 192.168.1.10: 3 attempts
+[WARNING] Login at unusual time: 1900-04-25 03:02:12
+[WARNING] Login at unusual time: 1900-04-25 02:15:45
